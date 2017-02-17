@@ -11,4 +11,5 @@ Vagrant.configure("2") do |config|
   config.vm.provision :shell, :path => "install-docker.sh"
   config.vm.provision :shell, :path => "install-docker-compose.sh"
   config.vm.provision :shell, :path => "install-packer.sh"
+  config.vm.provision :shell, :path => "setup.sh"
 end
