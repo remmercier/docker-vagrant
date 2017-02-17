@@ -10,4 +10,5 @@ Vagrant.configure("2") do |config|
   config.vm.synced_folder ".", "/vagrant", :mount_options => ["dmode=777", "fmode=666"] 
   config.vm.provision :shell, :path => "install-docker.sh"
   config.vm.provision :shell, :path => "install-docker-compose.sh"
+  config.vm.provision :shell, :path => "install-packer.sh"
 end
